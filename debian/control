@@ -25,7 +25,7 @@ Homepage: https://github.com/mblayman/tappy
 Package: python-tappy
 Architecture: all
 Depends: ${python:Depends}, ${misc:Depends}
-Description: TAP producer/consumer tools for python unittest
+Description: TAP producer/consumer tools for Python unittest -- Python 2 version
  The tap module provides a set of tools for working with the
  Test Anything Protocol (TAP). TAP is a line based test protocol
  for recording test data in a standard way.
@@ -40,7 +40,7 @@ Description: TAP producer/consumer tools for python unittest
 Package: python3-tappy
 Architecture: all
 Depends: ${python3:Depends}, ${misc:Depends}
-Description: TAP producer/consumer tools for python unittest
+Description: TAP producer/consumer tools for Python unittest -- Python 3 version
  The tap module provides a set of tools for working with the
  Test Anything Protocol (TAP). TAP is a line based test protocol 
  for recording test data in a standard way.
@@ -56,7 +56,7 @@ Package: python-tappy-doc
 Architecture: all
 Section: doc
 Depends: ${sphinxdoc:Depends}, ${misc:Depends}
-Description: TAP producer/consumer tools for python unittest
+Description: TAP producer/consumer tools for Python unittest -- documentation
  The tap.py module provides a set of tools for working with the
  Test Anything Protocol (TAP). TAP is a line based test protocol 
  for recording test data in a standard way.
