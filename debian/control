@@ -9,7 +9,12 @@ Build-Depends: debhelper (>= 9),
  python-setuptools,
  python3-setuptools,
  python-docutils,
- python-sphinx
+ python-sphinx,
+ python-mock,
+ python-nose,
+ python3-nose,
+ python-pygments,
+ python3-pygments
 X-Python-Version: >= 2.6
 X-Python3-Version: >= 3.2
 Standards-Version: 3.9.6
