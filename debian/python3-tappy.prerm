@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+
+if [ "upgrade" != "$1"]
+then
+    update-alternatives --remove tappy /usr/bin/python3-tappy
+fi
+
+#DEBHELPER#
+
+exit 0

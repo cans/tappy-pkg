@@ -1,0 +1,36 @@
+#!/usr/bin/make -f
+#DH_VERBOSE = 1
+
+export PYBUILD_NAME = tappy
+
+# main packaging script based on dh7 syntax
+%:
+	dh $@ --with python2,python3,sphinxdoc --buildsystem=pybuild
+
+override_dh_auto_build:
+override_dh_auto_build:
+	dh_auto_build
+	PYTHONPATH=. http_proxy='127.0.0.1:9' sphinx-build -N -bhtml docs/ build/html # HTML generator
+	PYTHONPATH=. http_proxy='127.0.0.1:9' sphinx-build -N -bman docs/ build/man # HTML generator
+	cp build/man/tappy.1 build/man/python-tappy.1
+	mv build/man/tappy.1 build/man/python3-tappy.1
+
+
+override_dh_install:
+ifneq "$(shell dh_listpackages | grep -- python3)" ""
+	mv $(CURDIR)/debian/python3-tappy/usr/bin/tappy $(CURDIR)/debian/python3-tappy/usr/bin/python3-tappy
+endif
+ifneq "$(shell dh_listpackages | grep -- python-)" ""
+	mv $(CURDIR)/debian/python-tappy/usr/bin/tappy $(CURDIR)/debian/python-tappy/usr/bin/python-tappy
+endif
+	dh_install -O--buildsystem=pybuild
+
+
+override_dh_sphinxdoc:
+ifneq "$(shell dh_listpackages | grep -- -doc)" ""
+	dh_sphinxdoc -p python-tappy-doc
+endif
+
+override_dh_auto_clean:
+	dh_auto_clean
+	make -C docs clean

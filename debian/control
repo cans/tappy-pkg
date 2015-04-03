@@ -1,0 +1,65 @@
+Source: tap.py
+Section: python
+Priority: optional
+Maintainer: Nicolas CANIART <nicolas@caniart.net>
+Build-Depends: debhelper (>= 9),
+ dh-python,
+ python-all,
+ python3-all,
+ python-setuptools,
+ python3-setuptools,
+ python-docutils,
+ python-sphinx
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+Standards-Version: 3.9.6
+Homepage: https://github.com/mblayman/tappy
+#Vcs-Git: git://anonscm.debian.org/collab-maint/tap.py.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/tap.py.git;a=summary
+
+Package: python-tappy
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: TAP producer/consumer tools for python unittest
+ The tap module provides a set of tools for working with the
+ Test Anything Protocol (TAP). TAP is a line based test protocol
+ for recording test data in a standard way.
+ .
+ This module comes with a test-runner that implements the
+ unittest.TestRunner interface and that produces TAP compliant
+ output. It also includes tools to parse the output produced by
+ TAP compliant test-runners.
+ .
+ This package provide the Python 2.x version of tap.py.
+
+Package: python3-tappy
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: TAP producer/consumer tools for python unittest
+ The tap module provides a set of tools for working with the
+ Test Anything Protocol (TAP). TAP is a line based test protocol 
+ for recording test data in a standard way.
+ .
+ This module comes with a test-runner that implements the 
+ unittest.TestRunner interface and that produces TAP compliant
+ output. It also includes tools to parse the output produced by 
+ TAP compliant test-runners.
+ .
+ This package provide the Python 3.x version of tap.py.
+
+Package: python-tappy-doc
+Architecture: all
+Section: doc
+Depends: ${sphinxdoc:Depends}, ${misc:Depends}
+Description: TAP producer/consumer tools for python unittest
+ The tap.py module provides a set of tools for working with the
+ Test Anything Protocol (TAP). TAP is a line based test protocol 
+ for recording test data in a standard way.
+ .
+ This module comes with a test-runner that implements the 
+ unittest.TestRunner interface and that produces TAP compliant
+ output. It also includes tools to parse the output produced by
+ TAP compliant test-runners.
+ .
+ This package provide the documentation for developers who want
+ to use tap.py.

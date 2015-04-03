@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+if [ "configure" == "$1" ]
+then
+    update-alternatives --install /usr/bin/tappy tappy /usr/bin/python3-tappy 20 \
+        --slave /usr/share/man/man1/tappy.1.gz tappy.1.gz /usr/share/man/man1/tappy.1.gz
+fi
+
+#DEBHELPER#
+
+exit 0

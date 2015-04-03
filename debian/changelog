@@ -1,0 +1,8 @@
+tap.py (1.3-1) UNRELEASED; urgency=low
+ 
+  * Added missing manpages and fixed a few portability issues.
+    (Sent pull request upstream for merge see
+    https://github.com/mblayman/tappy/pull/nn)
+  * Initial release (Closes: #781832)
+
+ -- Nicolas CANIART <nicolas@caniart.net>  Fri, 03 Apr 2015 09:49:12 +0200
