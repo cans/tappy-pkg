@@ -7,7 +7,7 @@ export PYBUILD_NAME = tappy
 %:
 	dh $@ --with python2,python3,sphinxdoc --buildsystem=pybuild
 
-override_dh_auto_build:
+
 override_dh_auto_build:
 	dh_auto_build
 	PYTHONPATH=. http_proxy='127.0.0.1:9' sphinx-build -N -bhtml docs/ build/html # HTML generator
@@ -30,6 +30,7 @@ override_dh_sphinxdoc:
 ifneq "$(shell dh_listpackages | grep -- -doc)" ""
 	dh_sphinxdoc -p python-tappy-doc
 endif
+
 
 override_dh_auto_clean:
 	dh_auto_clean
