@@ -1,3 +1,14 @@
+tap.py (1.3-3) unstable; urgency=medium
+
+  * Added a git-buildpackage config files.
+  * Package description mentions the nose plug-in.
+  * Fixed meddling of package/module terminology, went for package.
+  * Package now suggests installation of nose.
+  * Fixed a typo in the python3-tappy.prerm script.
+  * Fixed duplicated target in debian/rules makefile.
+
+ -- Nicolas CANIART <nicolas@caniart.net>  Sat, 04 Apr 2015 17:50:18 +0200
+
 tap.py (1.3-2) unstable; urgency=medium
 
   * Added a header to quilt patches.
