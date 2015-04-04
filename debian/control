@@ -25,30 +25,42 @@ Homepage: https://github.com/mblayman/tappy
 Package: python-tappy
 Architecture: all
 Depends: ${python:Depends}, ${misc:Depends}
+Suggests: python-nose
 Description: TAP producer/consumer tools for Python unittest -- Python 2 version
- The tap module provides a set of tools for working with the
+ The tap.py package provides a set of tools for working with the
  Test Anything Protocol (TAP). TAP is a line based test protocol
  for recording test data in a standard way.
  .
- This module comes with a test-runner that implements the
- unittest.TestRunner interface and that produces TAP compliant
- output. It also includes tools to parse the output produced by
- TAP compliant test-runners.
+ As a TAP producer, this package comes with a test-runner that
+ implements the unittest.TestRunner interface and produces TAP
+ compliant output. It also provides a plug-in for the nose test
+ framework.
+ .
+ As a TAP consumer, it includes tools to parse the output of
+ TAP compliant producers. It also provides means to replay a
+ test-suite from a captured output, without having to actually
+ run the tests again.
  .
  This package provide the Python 2.x version of tap.py.
 
 Package: python3-tappy
 Architecture: all
 Depends: ${python3:Depends}, ${misc:Depends}
+Suggests: python3-nose
 Description: TAP producer/consumer tools for Python unittest -- Python 3 version
- The tap module provides a set of tools for working with the
+ The tap.py package provides a set of tools for working with the
  Test Anything Protocol (TAP). TAP is a line based test protocol 
  for recording test data in a standard way.
  .
- This module comes with a test-runner that implements the 
- unittest.TestRunner interface and that produces TAP compliant
- output. It also includes tools to parse the output produced by 
- TAP compliant test-runners.
+ As a TAP producer, this package comes with a test-runner that
+ implements the unittest.TestRunner interface and produces TAP
+ compliant output. It also provides a plug-in for the nose test
+ framework.
+ .
+ As a TAP consumer, it includes tools to parse the output of
+ TAP compliant producers. It also provides means to replay a
+ test-suite from a captured output, without having to actually
+ run the tests again.
  .
  This package provide the Python 3.x version of tap.py.
 
@@ -57,14 +69,9 @@ Architecture: all
 Section: doc
 Depends: ${sphinxdoc:Depends}, ${misc:Depends}
 Description: TAP producer/consumer tools for Python unittest -- documentation
- The tap.py module provides a set of tools for working with the
+ The tap.py package provides a set of tools for working with the
  Test Anything Protocol (TAP). TAP is a line based test protocol 
  for recording test data in a standard way.
  .
- This module comes with a test-runner that implements the 
- unittest.TestRunner interface and that produces TAP compliant
- output. It also includes tools to parse the output produced by
- TAP compliant test-runners.
- .
- This package provide the documentation for developers who want
- to use tap.py.
+ This package provides the documentation for developers who want
+ to use the tap.py package in their applications.
