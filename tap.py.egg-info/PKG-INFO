@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: tap.py
-Version: 1.3
+Version: 1.4
 Summary: Test Anything Protocol (TAP) tools
 Home-page: https://github.com/mblayman/tappy
 Author: Matt Layman
@@ -18,6 +18,11 @@ Description:
         
         Releases
         ========
+        
+        Version 1.4, Released April 5, 2015
+        -----------------------------------
+        
+        * Update ``setup.py`` to support Debian packaging. Include man page.
         
         Version 1.3, Released January 9, 2015
         -------------------------------------
