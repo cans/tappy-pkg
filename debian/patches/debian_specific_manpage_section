@@ -1,0 +1,41 @@
+This patch adds a section explaining the aliasing applied to
+the tappy command, how it can be run against a specific
+Python interpreter and which is the default depending on
+what packages are installed.
+
+It also fixes a typo in upstream the manpage.
+--- a/docs/tappy.1.rst
++++ b/docs/tappy.1.rst
+@@ -17,7 +17,7 @@
+ given as *pathname* s and produces an output similar to what
+ the regular text test-runner from python's :py:mod:`unittest`
+ module would. If *pathname* points to a directory,
+-:program:`tappy` will look in that directory of ``*.tap``
++:program:`tappy` will look in that directory for ``*.tap``
+ files to consume.
+ 
+ If you have a tool that consumes the `unittest` regular output,
+@@ -45,6 +45,23 @@
+ -v, --verbose  produce verbose output
+ 
+ 
++Aliases
++-------
++
++When installed from a Debian package, the tappy command can be run
++against a specific Python interpreter. Debian's current consensus with
++respect to Python is to favor Python 3. Thus, if you install the
++:file:`python3-tappy` package, :program:`tappy` will run with
++Python 3. You can use the :manpage:`update-alternatives(1)` command to
++change that behaviour and favor the version running against Python 2.
++
++Alternatively you can select the interpreter, by explicitly
++choosing either of the :program:`python-tappy` and
++:program:`python3-tappy` commands.
++
++:manpage:`tappy(1)`, :manpage:`python-tappy(1)`, :manpage:`python3-tappy(1)`
++
++
+ Author
+ ------
+ 

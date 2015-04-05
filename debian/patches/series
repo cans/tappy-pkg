@@ -1,2 +1,1 @@
-fix_python_portability
-add_missing_manpage
+debian_specific_manpage_section
