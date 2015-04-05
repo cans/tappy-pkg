@@ -1,3 +1,10 @@
+tap.py (1.4-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.4
+  * Removed patches merged by upstream.
+
+ -- Nicolas CANIART <nicolas@caniart.net>  Sun, 05 Apr 2015 22:57:21 +0200
+
 tap.py (1.3-3) unstable; urgency=medium
 
   * Added a git-buildpackage config files.
