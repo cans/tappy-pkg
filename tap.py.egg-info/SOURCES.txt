@@ -13,6 +13,7 @@ docs/make.bat
 docs/producers.rst
 docs/releases.rst
 docs/sample_tap.txt
+docs/tappy.1.rst
 docs/_static/.keep
 tap/__init__.py
 tap/adapter.py
