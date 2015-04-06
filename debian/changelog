@@ -1,3 +1,10 @@
+tap.py (1.4-2) unstable; urgency=medium
+
+  * Fixed READMEs not shipped in the python3 version of the package.
+  * Added upstream changelog to the packages.
+
+ -- Nicolas CANIART <nicolas@caniart.net>  Mon, 06 Apr 2015 09:06:14 +0200
+
 tap.py (1.4-1) unstable; urgency=medium
 
   * Imported Upstream version 1.4
