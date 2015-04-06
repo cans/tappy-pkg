@@ -31,6 +31,8 @@ ifneq "$(shell dh_listpackages | grep -- -doc)" ""
 	dh_sphinxdoc -p python-tappy-doc
 endif
 
+override_dh_installchangelogs:
+	dh_installchangelogs -O--buildsystem=pybuild docs/releases.rst
 
 override_dh_auto_clean:
 	dh_auto_clean
