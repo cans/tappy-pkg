@@ -1,11 +1,16 @@
 tap.py for Debian
 -----------------
 
-The ``tappy`` script as been renamed ``python3-tappy`` and ``python-tappy``
-in packages python3-tappy and python-tappy respectively.
+The ``tappy`` script as been renamed ``python3-tappy`` and
+``python-tappy`` in packages python3-tappy and python-tappy
+respectively.
 
-The ``tappy`` is provided through alternatives. If you want to select one
-version over another, use `update-alternatives(1)` to proceed.
+The ``tappy`` command is provided through Debian's alternatives
+mecanism. By default, as per the general consensus amongst Debian
+Python developpers that Python 3 should be pushed forward, if both
+packages are installed, the ``tappy`` command will be provided by the
+``python3-tappy`` script. If you wish to change to change that, use
+`update-alternatives(1)` to proceed.
 
 
  -- Nicolas CANIART <nicolas@caniart.net>  Fri, 03 Apr 2015 09:49:12 +0200
