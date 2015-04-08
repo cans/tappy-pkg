@@ -1,7 +1,7 @@
 tap.py for Debian
 -----------------
 
-The ``tappy`` script as been renamed ``python3-tappy`` and
+The ``tappy`` script has been renamed ``python3-tappy`` and
 ``python-tappy`` in packages python3-tappy and python-tappy
 respectively.
 

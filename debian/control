@@ -2,6 +2,7 @@ Source: tap.py
 Section: python
 Priority: optional
 Maintainer: Nicolas CANIART <nicolas@caniart.net>
+Uploaders: Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Build-Depends: debhelper (>= 9),
  dh-python,
  python-all,
@@ -67,7 +68,7 @@ Description: TAP producer/consumer tools for Python unittest -- Python 3 version
 Package: python-tappy-doc
 Architecture: all
 Section: doc
-Depends: ${sphinxdoc:Depends}, ${misc:Depends}
+Depends: ${sphinxdoc:Depends}, ${misc:Depends}, libjs-sphinxdoc
 Description: TAP producer/consumer tools for Python unittest -- documentation
  The tap.py package provides a set of tools for working with the
  Test Anything Protocol (TAP). TAP is a line based test protocol 
